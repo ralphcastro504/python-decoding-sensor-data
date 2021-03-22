@@ -6,6 +6,7 @@ from temperature_info import TemperatureData
 from humidity_info import HumidityData
 from datetime import date
 from datetime import datetime
+from statistics import mean
 
 
 ##############################
@@ -47,6 +48,8 @@ recs = humidity_data.get_data_by_area(rec_area=test_area)
 print("\nHouse Humidity records for area {} = {}".format(test_area, len(recs)))
 print(f"\nAverage: {mean(recs)}")
 
-
+recs = humidity_data.get_data_by_date(rec_date=test_date)
+print("\nHouse humidity sensor records for date {} = {}".format(test_date.strftime("%m/%d/%y"), len(recs)))
+print(f"\nAverage: {mean(recs)}")
 
 # Module 5 code here:
