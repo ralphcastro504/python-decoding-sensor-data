@@ -1,6 +1,10 @@
 import os
 import glob
 import csv
+import sys
+
+os.chdir("C:\\Code\\Python\\Learning\\Pluralsight\\python-decoding-sensor-data")
+print(os.getcwd())
 
 def load_sensor_data():
     sensor_data = []

@@ -16,6 +16,7 @@ class HouseInfo:
             elif rec_area == int(record['area']):
                 field_data.append(record[field])
 
+
         return field_data
 
 
